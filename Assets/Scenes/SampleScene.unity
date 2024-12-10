@@ -491,8 +491,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 262235440}
   initialSpeed: 4
-  maxSpeed: 12
-  speedIncreaseRate: 0.2
+  maxSpeed: 10
+  speedIncreaseRate: 0.15
   gameOverPanel: {fileID: 565094947}
   gameOverHighScoreText: {fileID: 1225912748}
 --- !u!1 &140262097
@@ -610,7 +610,7 @@ GameObject:
   - component: {fileID: 152427565}
   - component: {fileID: 152427564}
   - component: {fileID: 152427563}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1525,7 +1525,7 @@ GameObject:
   - component: {fileID: 487273901}
   - component: {fileID: 487273900}
   - component: {fileID: 487273899}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Coin (5)
   m_TagString: Coin
   m_Icon: {fileID: 0}
@@ -1562,6 +1562,14 @@ MonoBehaviour:
   coinText: {fileID: 801555880}
   highScoreText: {fileID: 1832380696}
   groundPlatform: {fileID: 22169983}
+  obstacleLayer:
+    serializedVersion: 2
+    m_Bits: 1024
+  coinLayer:
+    serializedVersion: 2
+    m_Bits: 2048
+  respawnMargin: 3
+  minDistanceBetweenCoins: 1
 --- !u!135 &487273900
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1868,7 +1876,7 @@ GameObject:
   - component: {fileID: 691462069}
   - component: {fileID: 691462068}
   - component: {fileID: 691462067}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Coin (1)
   m_TagString: Coin
   m_Icon: {fileID: 0}
@@ -1905,6 +1913,14 @@ MonoBehaviour:
   coinText: {fileID: 801555880}
   highScoreText: {fileID: 1832380696}
   groundPlatform: {fileID: 22169983}
+  obstacleLayer:
+    serializedVersion: 2
+    m_Bits: 1024
+  coinLayer:
+    serializedVersion: 2
+    m_Bits: 2048
+  respawnMargin: 3
+  minDistanceBetweenCoins: 1
 --- !u!135 &691462068
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2177,7 +2193,7 @@ GameObject:
   - component: {fileID: 885370144}
   - component: {fileID: 885370143}
   - component: {fileID: 885370142}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Coin (6)
   m_TagString: Coin
   m_Icon: {fileID: 0}
@@ -2214,6 +2230,14 @@ MonoBehaviour:
   coinText: {fileID: 801555880}
   highScoreText: {fileID: 1832380696}
   groundPlatform: {fileID: 22169983}
+  obstacleLayer:
+    serializedVersion: 2
+    m_Bits: 1024
+  coinLayer:
+    serializedVersion: 2
+    m_Bits: 2048
+  respawnMargin: 3
+  minDistanceBetweenCoins: 1
 --- !u!135 &885370143
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2965,7 +2989,7 @@ GameObject:
   - component: {fileID: 1286887248}
   - component: {fileID: 1286887247}
   - component: {fileID: 1286887250}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3387,7 +3411,7 @@ GameObject:
   - component: {fileID: 1680662030}
   - component: {fileID: 1680662029}
   - component: {fileID: 1680662028}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3523,7 +3547,7 @@ GameObject:
   - component: {fileID: 1689064823}
   - component: {fileID: 1689064822}
   - component: {fileID: 1689064821}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3659,7 +3683,7 @@ GameObject:
   - component: {fileID: 1733332411}
   - component: {fileID: 1733332410}
   - component: {fileID: 1733332409}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Coin (4)
   m_TagString: Coin
   m_Icon: {fileID: 0}
@@ -3696,6 +3720,14 @@ MonoBehaviour:
   coinText: {fileID: 801555880}
   highScoreText: {fileID: 1832380696}
   groundPlatform: {fileID: 22169983}
+  obstacleLayer:
+    serializedVersion: 2
+    m_Bits: 1024
+  coinLayer:
+    serializedVersion: 2
+    m_Bits: 2048
+  respawnMargin: 3
+  minDistanceBetweenCoins: 1
 --- !u!135 &1733332410
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3783,7 +3815,7 @@ GameObject:
   - component: {fileID: 1813986796}
   - component: {fileID: 1813986795}
   - component: {fileID: 1813986794}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Coin
   m_TagString: Coin
   m_Icon: {fileID: 0}
@@ -3820,6 +3852,14 @@ MonoBehaviour:
   coinText: {fileID: 801555880}
   highScoreText: {fileID: 1832380696}
   groundPlatform: {fileID: 22169983}
+  obstacleLayer:
+    serializedVersion: 2
+    m_Bits: 1024
+  coinLayer:
+    serializedVersion: 2
+    m_Bits: 2048
+  respawnMargin: 3
+  minDistanceBetweenCoins: 1
 --- !u!135 &1813986795
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4043,7 +4083,7 @@ GameObject:
   - component: {fileID: 1842616803}
   - component: {fileID: 1842616802}
   - component: {fileID: 1842616801}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Coin (2)
   m_TagString: Coin
   m_Icon: {fileID: 0}
@@ -4080,6 +4120,14 @@ MonoBehaviour:
   coinText: {fileID: 801555880}
   highScoreText: {fileID: 1832380696}
   groundPlatform: {fileID: 22169983}
+  obstacleLayer:
+    serializedVersion: 2
+    m_Bits: 1024
+  coinLayer:
+    serializedVersion: 2
+    m_Bits: 2048
+  respawnMargin: 3
+  minDistanceBetweenCoins: 1
 --- !u!135 &1842616802
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4167,7 +4215,7 @@ GameObject:
   - component: {fileID: 1895285215}
   - component: {fileID: 1895285214}
   - component: {fileID: 1895285213}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4303,7 +4351,7 @@ GameObject:
   - component: {fileID: 1952507654}
   - component: {fileID: 1952507653}
   - component: {fileID: 1952507652}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Coin (3)
   m_TagString: Coin
   m_Icon: {fileID: 0}
@@ -4340,6 +4388,14 @@ MonoBehaviour:
   coinText: {fileID: 801555880}
   highScoreText: {fileID: 1832380696}
   groundPlatform: {fileID: 22169983}
+  obstacleLayer:
+    serializedVersion: 2
+    m_Bits: 1024
+  coinLayer:
+    serializedVersion: 2
+    m_Bits: 2048
+  respawnMargin: 3
+  minDistanceBetweenCoins: 1
 --- !u!135 &1952507653
 SphereCollider:
   m_ObjectHideFlags: 0
