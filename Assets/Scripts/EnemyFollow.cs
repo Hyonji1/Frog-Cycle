@@ -10,10 +10,14 @@ public class EnemyFollow : MonoBehaviour
     public float speedIncreaseRate = 0.1f; // Rate at which the speed increases
     public GameObject gameOverPanel;
     public TextMeshProUGUI gameOverHighScoreText; // Reference to display high score on Game Over Panel
+    public TextMeshProUGUI gameOverScoreText;
 
     private float currentSpeed;
     private float obstacleAvoidanceDistance = 1.0f; // Distance to start avoiding obstacles
     private float turnSpeed = 10.0f; // Snappier turn speed
+    
+    public TextMeshProUGUI gameOverMessageText;
+    private bool isGameOver = false;
 
     void Start()
     {
@@ -22,7 +26,7 @@ public class EnemyFollow : MonoBehaviour
 
     void Update()
     {
-        if (player != null)
+        if (!isGameOver && player != null)
         {
             // Gradually increase speed over time
             if (currentSpeed < maxSpeed)
@@ -50,11 +54,28 @@ public class EnemyFollow : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (!isGameOver && collision.gameObject.CompareTag("Player"))
         {
+            isGameOver = true; // Set the game over flag
             gameOverPanel.SetActive(true);
             Time.timeScale = 0f;
-            gameOverHighScoreText.text = "High Score: " + Coin.highScore.ToString(); // Display high score
+            gameOverHighScoreText.text = "High Score: " + Coin.highScore.ToString();
+            gameOverScoreText.text = "Score: " + Coin.coinsCollected.ToString();
+            GameObject inGameUI = GameObject.Find("InGameUI");
+            if (inGameUI != null)
+            {
+                inGameUI.SetActive(false);
+            }
+
+            UpdateGameOverMessage("The worm got you!");
+        }
+    }
+
+    void UpdateGameOverMessage(string message)
+    {
+        if (gameOverMessageText != null)
+        {
+            gameOverMessageText.text = message;
         }
     }
 
