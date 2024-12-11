@@ -4,8 +4,12 @@ A simple enemy-chases-player game while collecting coins.
 
 ## INSTRUCTIONS:
 
-To play the game, download zip file of the repository.
-Inside the 'Game' Folder is the .exe file (Frog Cycle.exe), run the game by clicking the executive(.exe) file.
+To play the game, head to Installer folder > Output.
+Once inside the folder, click the ... at the top right and download the folder which contains the installer.
+After that, extract the zip file and head inside the folder.
+Run the "FrogCycleSetup.exe" setup file.
+Launch the game.
+Enjoy.
 
 ## How to play the game
 
