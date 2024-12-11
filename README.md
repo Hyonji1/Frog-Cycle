@@ -5,9 +5,11 @@ A simple enemy-chases-player game while collecting coins.
 ## INSTRUCTIONS:
 
 To play the game, head to Installer folder > Output.
-Once inside the folder, click the ... at the top right and download the folder which contains the installer.
-After that, extract the zip file and head inside the folder.
+Once inside the folder, click the FrogCycleSetup.exe and download raw file.
 Run the "FrogCycleSetup.exe" setup file.
+
+[it should prompt that it is a dangerous file, it is not. click more info and proceed to installing.]
+
 Launch the game.
 Enjoy.
 
