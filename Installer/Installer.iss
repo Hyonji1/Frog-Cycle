@@ -2,18 +2,18 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "Frog Cycle"
-#define MyAppVersion "1.0.1"
-#define MyAppPublisher "JaJaGames"
+#define MyAppVersion "1..0.1"
+#define MyAppPublisher "JajaGames"
 #define MyAppURL "https://www.example.com/"
 #define MyAppExeName "Frog Cycle.exe"
-#define MyAppAssocName MyAppName + ""
+#define MyAppAssocName MyAppName + " File"
 #define MyAppAssocExt ".myp"
 #define MyAppAssocKey StringChange(MyAppAssocName, " ", "") + MyAppAssocExt
 
 [Setup]
 ; NOTE: The value of AppId uniquely identifies this application. Do not use the same AppId value in installers for other applications.
 ; (To generate a new GUID, click Tools | Generate GUID inside the IDE.)
-AppId={{114CEF65-F6B3-47AF-BA51-C56BDD139D29}
+AppId={{E0A06032-25AC-4507-AD9D-65A3A502B19F}
 AppName={#MyAppName}
 AppVersion={#MyAppVersion}
 ;AppVerName={#MyAppName} {#MyAppVersion}
